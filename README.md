@@ -4,4 +4,5 @@ This repository focuses on the Contemporary Undergraduate Mathematical Contest i
 
 
 # Instruction
-1. 各题目对应的解题思路详细内容，均存放于该题目专属文件夹内，例如 "2024A-Solving Ideas.pdf"。
+1. 各组题目由 CUMCM 命题组委会命制，本仓库中的题目内容仅供参考，请于 CUMCM 官网 https://www.mcm.edu.cn/ 下载历年原题。
+2. 各题目对应的解题思路详细内容，均存放于该题目专属文件夹内，例如 "2024A-Solving Ideas.pdf"。
