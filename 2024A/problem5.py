@@ -57,12 +57,12 @@ def next_point(s_prev, x_prev, y_prev, length):
     s = s_prev - length
     while True:
         x, y, xp, yp = s_to_xy(s)
-        d2 = (x - x_prev) ** 2 + (y - y_prev) ** 2
-        L = d2 - length * sqrt(d2)
+        L = (x - x_prev) ** 2 + (y - y_prev) ** 2 - length**2
         Lp = 2 * ((x - x_prev) * xp + (y - y_prev) * yp)
-        s_new = s - L / Lp
+        e = L / Lp
+        s_new = s - e
 
-        if L / Lp < 1e-12:
+        if abs(e) < 1e-12:
             break
         s = s_new
     return s_new, x, y, xp, yp
