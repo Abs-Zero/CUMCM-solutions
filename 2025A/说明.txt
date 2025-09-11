@@ -1,2 +1,2 @@
-fix_parameters.py 为所有参数的配置文件
+fix_parameters.py 为所有题设固定参数的配置文件
 p5_refine.py 为第五问代码
