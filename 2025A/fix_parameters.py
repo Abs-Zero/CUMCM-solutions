@@ -2,8 +2,7 @@ import numpy as np
 
 N_M, N_FY, N_S = 3, 5, 3
 
-ACC = 1e-2  # 计算精度
-DT = ACC  # 时间积分步长
+ACC = 1e-6  # 计算精度
 GOLDEN_RATIO = (np.sqrt(5) - 1) / 2  # 黄金分割比
 
 G_GRAVITY = 9.8  # 重力加速度
@@ -82,3 +81,4 @@ T_START, T_END = 0, 67
 # 预处理参数
 R_SMOKE2 = R_SMOKE * R_SMOKE
 V_M2 = V_M * V_M
+
