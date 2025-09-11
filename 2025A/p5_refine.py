@@ -80,7 +80,7 @@ def get_d2(t, r_s0, t_exp, k):
     for r_t in POINTS_REAL_TARGET:
         r1, r2 = r_m - r_t, r_s - r_t
         rc = np.dot(r1, r2)
-        # 实际上需要两个端点的判断，实际上烟雾不会到达目标点位置，遂只使用了一个判断。
+        # 实际上需要两个端点的判断，但问题情境中烟雾不会到达目标点位置，遂只使用了一个判断。
         if rc > np.dot(r1, r1):
             d2 = np.dot(r1 - r2, r1 - r2)
         else:
@@ -481,4 +481,5 @@ if __name__ == "__main__":
     # P = get_history_res(0)  # 使用历史计算结果进行展示
     
     plt.close("all")
+
     process_res(P, do_print=True, do_plot=True, do_save=True)
